@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>tabCarros</title>
+    <!-- 
+        A existência de uma classe b é pelo fato de apenas um dos textos coloridos não ser em negrito.
+        Minha solução foi fazer uma classe b para o bold que seria mais simples de implementar do que 
+        adicionar uma tg b ou strong nos textos que já terão uma classe para coloração
+     -->
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+
+        table{
+            text-align: center;
+        }
+
+        thead tr{
+            background-color: silver;
+        }
+
+        .fundo-azul{
+            background-color: lightblue;
+        }
+
+        .carros{
+            background-color: lightgreen;
+        }
+        .texto-azul{
+            color: blue
+        }
+
+        .texto-vermelho{
+            color: red;
+        }
+        .b{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Montadora</th>
+                    <th><img src="./carros/Jeep.png" alt="jeep"></th>
+                    <th><img src="./carros/Honda.png" alt=""></th>
+                    <th><img src="./carros/Nissan.png" alt="nissan"></th>
+                    <th><img src="./carros/Hyundai.png" alt="hyundai"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Site</th>
+                    <td><a href="https://www.jeep.com.br/">https://www.jeep.com.br/</a></td>
+                    <td><a href="https://www.honda.com.br/">https://www.honda.com.br/</a></td>
+                    <td><a href="https://www.nissan.com.br/">https://www.nissan.com.br/</a></td>
+                    <td><a href="http://www.hyundai.com/br/pt/Main/index.html ">http://www.hyundai.com/br/pt/Main/index.html </a></td>
+                </tr>
+                <tr class="carros">
+                    <th rowspan="2">Carro</th>
+                    <th>Renegade Limited 1.8 flex</th>
+                    <th>Honda HR-V 1.8 EXL</th>
+                    <th>Kicks SL 1.6 16v</th>
+                    <th>Creta Prestige 2.0</th>
+                </tr>
+                <tr>
+                    <td><img src="./carros/Jeep_Renegade.png" alt="Jeep Renagade"></td>
+                    <td><img src="./carros/Honda_HR-V.JPG" alt="Honda HR-V"></td>
+                    <td><img src="./carros/Nissan Kicks.jpg" alt="Nissan Kicks"></td>
+                    <td><img src="./carros/car_hyundai_creta.png" alt="Hyundai Creta Prestige"></td>
+                </tr>
+                <tr>
+                    <th>Motor</th>
+                    <td>1.8 flex 16v.</td>
+                    <td>1.8 flex 16v.</td>
+                    <td class="texto-vermelho">1.6 flex 16v.</td>
+                    <td class="texto-azul b">2.0 flex 16v.</td>
+                </tr>
+                <tr class="fundo-azul">
+                    <th>Piloto automático</th>
+                    <td><img src="./carros/OK.png" alt="ok"><img src="./carros/OK.png" alt="ok"></td>
+                    <td><img src="./carros/OK.png" alt="ok"><img src="./carros/OK.png" alt="ok"></td>
+                    <td><img src="./carros/No.png" alt="no"></td>
+                    <td><img src="./carros/OK.png" alt="ok"><img src="./carros/OK.png" alt="ok"></td>
+                </tr>
+                <tr>
+                    <th>Rotas/Pneus</th>
+                    <td>liga leve, 255/55 R18</td>
+                    <td>liga leve, 215/55 R17</td>
+                    <td>liga leve, 205/55 R17</td>
+                    <td>liga leve, 215/60 R17</td>
+                </tr>
+                <tr class="fundo-azul">
+                    <th>Garantia (anos)</th>
+                    <td><img src="./carros/OK.png" alt="ok"><img src="./carros/OK.png" alt="ok"><img src="./carros/OK.png" alt="ok"></td>
+                    <td><img src="./carros/OK.png" alt="ok"><img src="./carros/OK.png" alt="ok"><img src="./carros/OK.png" alt="ok"></td>
+                    <td><img src="./carros/OK.png" alt="ok"><img src="./carros/OK.png" alt="ok"><img src="./carros/OK.png" alt="ok"></td>
+                    <td><img src="./carros/OK.png" alt="ok"><img src="./carros/OK.png" alt="ok"><img src="./carros/OK.png" alt="ok"><img src="./carros/OK.png" alt="ok"><img src="./carros/OK.png" alt="ok"></td>
+                </tr>
+                <tr>
+                    <th>Câmbio</th>
+                    <td>Automático, 6 marchas, tração dianteira</td>
+                    <td class="texto-azul b">CVT, 7 marchas, tração dianteira</td>
+                    <td>Automático, 6 marchas, tração dianteira</td>
+                    <td>Automático, 6 marchas, tração</td>
+                </tr>
+                <tr class="fundo-azul">
+                    <th>Consumo Urbano/Rodoviário</th>
+                    <td>9,6 km/l - 12 mk/l</td>
+                    <td>10,4 km/l - 13,1 mk/l</td>
+                    <td class="texto-azul b">10,9 km/l - 14,4 km/l</td>
+                    <td><span class="texto-vermelho b">8,2 km/l</span> - 12,7 km/l</td>
+                </tr>
+                <tr>
+                    <th>Preço (Fevereiro/2017)</th>
+                    <td>R$ 97.990</td>
+                    <td class="texto-vermelho b">R$ 102.600</td>
+                    <td class="texto-azul b">R$ 91.900</td>
+                    <td>R$ 99.490</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">
+                        Informações: Quatro Rodas - <a href="http://quatrorodas.abril.com.br/testes/comparativo-o-confronto-entre-a-nova-geracao-de-suvs/">http://quatrorodas.abril.com.br/testes/comparativo-o-confronto-entre-a-nova-geracao-de-suvs/</a> 
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <p>Desenvolvido por: Théo Kabir Novais de Carvalho</p>
+    </div>
+</body>
+</html>

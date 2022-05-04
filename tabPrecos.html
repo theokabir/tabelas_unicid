@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>tabPrecos</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        tr th, tr td{
+            text-align: center;
+        }
+        thead{
+            background-color: #aaa;
+        }
+        .celula-produto{
+            padding: 0 20px;
+        }
+        .celula-preco{
+            text-align: right;
+            padding: 0 5px 0 30px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table border='1'>
+            <thead>
+                <tr>
+                    <th rowspan="2">Nº</th>
+                    <th rowspan="2">Categoria</th>
+                    <th rowspan="2">Código</th>
+                    <th rowspan="2" colspan="2">Produto</th>
+                    <th colspan="2">Preço</th>
+                    <th rowspan="2">Qtd Estoque</th>
+                </tr>
+                <tr>
+                    <th>Atacado</th>
+                    <th>Varejo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Acessórios</td>
+                    <td>1510</td>
+                    <td><img src="./produtos/mouse.png" alt="mouse"></td>
+                    <td class="celula-produto">Mouse para computadores com fio</td>
+                    <td class="celula-preco">R$ 22,00</td>
+                    <td class="celula-preco">R$ 26,00</td>
+                    <td>32</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Acessórios</td>
+                    <td>2311</td>
+                    <td><img src="./produtos/camera.png" alt="camera"></td>
+                    <td class="celula-produto">Câmera Digital SemiProfissional</td>
+                    <td class="celula-preco">R$ 720,00</td>
+                    <td class="celula-preco">R$ 950,00</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Computadores</td>
+                    <td>2219</td>
+                    <td><img src="./produtos/notebook.png" alt="notebook"></td>
+                    <td class="celula-produto">Notebook Intel i7 6GB Memória RAM</td>
+                    <td class="celula-preco">R$ 1852,00</td>
+                    <td class="celula-preco">R$ 2370,00</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
